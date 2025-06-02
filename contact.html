@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Liên Hệ | HIBIKI Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+<header id="header">
+    <div class="container flex-between">
+        <a id="logo" href="index.html"><img src="images/logo.png" alt="HIBIKI Shop" /></a>
+        <nav>
+            <ul id="gnav-ul">
+                <li class="dropdown">
+                    <a href="products.html">Sản Phẩm</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="do-tap.html">Đồ tập</a></li>
+                        <li><a href="thuc-pham-chuc-nang.html">Thực phẩm chức năng</a></li>
+                        <li><a href="hat-dinh-duong.html">Hạt dinh dưỡng</a></li>
+                        <li><a href="thuc-pham-sach.html">Thực phẩm sạch</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="blog.html">Kiến Thức Dinh Dưỡng</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="blog.html">Chia sẻ kiến thức</a></li>
+                    </ul>
+                </li>
+                <li><a href="reviews.html">Đánh Giá Khách Hàng</a></li>
+                <li><a href="about.html">Giới Thiệu</a></li>
+                <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main id="content">
+    <div class="container">
+        <h1>Liên Hệ Với Chúng Tôi</h1>
+        <div class="contact-info">
+            <p><strong>Địa chỉ:</strong> 
+Q. Bình Thạnh, TP.HCM, Ho Chi Minh City, Vietnam</p>
+            <p><strong>Hotline:</strong> 098 788 74 57</p>
+            <p><strong>Email:</strong> nhunhat113@gmail.com</p>
+        </div>
+        <form id="contact-form" class="contact-form">
+            <input type="text" name="name" placeholder="Họ và tên" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Nội dung liên hệ" required></textarea>
+            <button type="submit">Gửi liên hệ</button>
+            <div id="contact-message"></div>
+        </form>
+    </div>
+</main>
+<footer id="footer">
+    <div class="container">
+        &copy; 2025 HIBIKI Shop. All rights reserved.
+    </div>
+</footer>
+<script src="scripts.js"></script>
+<script src="contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Giới Thiệu | HIBIKI Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .about-contact-info {
+            background: #f8f8f8;
+            border-radius: 10px;
+            padding: 18px 24px;
+            margin-top: 24px;
+            font-size: 1.08em;
+        }
+        .about-contact-info ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .about-contact-info li {
+            margin-bottom: 8px;
+        }
+        .about-contact-info a {
+            color: #27ae60;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<header id="header">
+    <div class="container flex-between">
+        <a id="logo" href="index.html"><img src="images/logo.png" alt="HIBIKI Shop" /></a>
+        <nav>
+            <ul id="gnav-ul">
+                <li class="dropdown">
+                    <a href="products.html">Sản Phẩm</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="do-tap.html">Đồ tập</a></li>
+                        <li><a href="thuc-pham-chuc-nang.html">Thực phẩm chức năng</a></li>
+                        <li><a href="hat-dinh-duong.html">Hạt dinh dưỡng</a></li>
+                        <li><a href="thuc-pham-sach.html">Thực phẩm sạch</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="blog.html">Kiến Thức Dinh Dưỡng</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="blog.html">Chia sẻ kiến thức</a></li>
+                    </ul>
+                </li>
+                <li><a href="reviews.html">Đánh Giá Khách Hàng</a></li>
+                <li><a href="about.html">Giới Thiệu</a></li>
+                <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main id="content">
+    <div class="container">
+        <h1>Giới Thiệu Về HIBIKI Shop</h1>
+        <p><strong>HIBIKI Shop</strong> là địa chỉ tin cậy cung cấp đồ tập, thực phẩm chức năng, hạt dinh dưỡng và thực phẩm sạch chính hãng. Chúng tôi cam kết mang đến cho khách hàng:</p>
+        <ul>
+            <li>Sản phẩm chất lượng, nguồn gốc rõ ràng</li>
+            <li>Giá cả cạnh tranh, nhiều ưu đãi hấp dẫn</li>
+            <li>Đội ngũ tư vấn tận tâm, chuyên nghiệp</li>
+            <li>Chính sách đổi trả, bảo hành minh bạch</li>
+        </ul>
+        <p>HIBIKI Shop đồng hành cùng bạn trên hành trình sống khỏe, năng động và hạnh phúc!</p>
+        <img src="images/about.jpg" alt="Giới thiệu Hibiki Shop" style="max-width:400px;width:100%;border-radius:12px;margin:24px 0;">
+        <hr style="margin:32px 0;">
+        <div class="about-contact-info">
+            <h2>Thông tin liên hệ</h2>
+            <ul>
+                <li><strong>Địa chỉ:</strong> Q. Bình Thạnh, TP.HCM, Ho Chi Minh City, Vietnam</li>
+                <li><strong>Điện thoại:</strong> <a href="tel:0987887457">098 788 74 57</a></li>
+                <li><strong>Email:</strong> <a href="mailto:nhunhat113@gmail.com">nhunhat113@gmail.com</a></li>
+                <li><strong>Giờ mở cửa:</strong> 8h - 22h (<span id="open-status">Đang đóng cửa</span>)</li>
+                <li><strong>Đánh giá:</strong> Not yet rated (2 Reviews)</li>
+                <li><strong>Loại hình:</strong> Department Store</li>
+            </ul>
+        </div>
+    </div>
+</main>
+<footer id="footer">
+    <div class="container">
+        &copy; 2025 HIBIKI Shop. All rights reserved.
+    </div>
+</footer>
+<script src="scripts.js"></script>
+<script>
+// filepath: d:\Website\TEMPLATE WEBSITE\BÁN HÀNG\Hibiki Shop\about.html
+document.addEventListener("DOMContentLoaded", function() {
+    function checkOpenStatus() {
+        // Giờ Việt Nam GMT+7
+        const now = new Date();
+        const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+        const vnTime = new Date(utc + 7 * 3600000);
+        const hour = vnTime.getHours();
+        const open = (hour >= 8 && hour < 22);
+        const status = document.getElementById('open-status');
+        if (status) {
+            status.textContent = open ? "Đang mở cửa" : "Đang đóng cửa";
+            status.style.color = open ? "#27ae60" : "#d32f2f";
+            status.style.fontWeight = "bold";
+        }
+    }
+    checkOpenStatus();
+    setInterval(checkOpenStatus, 60000); // cập nhật mỗi phút
+});
+</script>
+
+
+</html></body></body>
+</html>

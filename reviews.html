@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đánh Giá Khách Hàng | HIBIKI Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reviews.css">
+</head>
+<body>
+<header id="header">
+    <div class="container flex-between">
+        <a id="logo" href="index.html"><img src="images/logo.png" alt="HIBIKI Shop" /></a>
+        <nav>
+            <ul id="gnav-ul">
+                <li class="dropdown">
+                    <a href="products.html">Sản Phẩm</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="do-tap.html">Đồ tập</a></li>
+                        <li><a href="thuc-pham-chuc-nang.html">Thực phẩm chức năng</a></li>
+                        <li><a href="hat-dinh-duong.html">Hạt dinh dưỡng</a></li>
+                        <li><a href="thuc-pham-sach.html">Thực phẩm sạch</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="blog.html">Kiến Thức Dinh Dưỡng</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="blog.html">Chia sẻ kiến thức</a></li>
+                    </ul>
+                </li>
+                <li><a href="reviews.html">Đánh Giá Khách Hàng</a></li>
+                <li><a href="about.html">Giới Thiệu</a></li>
+                <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main id="content">
+    <div class="container">
+        <h1>Đánh Giá Khách Hàng</h1>
+        <div class="reviews-list">
+            <div class="review-card">
+                <div class="review-avatar"><img src="images/user1.jpg" alt="Khách 1"></div>
+                <div>
+                    <strong>Nguyễn Văn A</strong> <span class="review-stars">★★★★★</span>
+                    <p>Shop giao hàng nhanh, sản phẩm chất lượng, tư vấn nhiệt tình!</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-avatar"><img src="images/user2.jpg" alt="Khách 2"></div>
+                <div>
+                    <strong>Trần Thị B</strong> <span class="review-stars">★★★★★</span>
+                    <p>Mua hạt dinh dưỡng ở đây rất yên tâm, đóng gói đẹp, giá tốt.</p>
+                </div>
+            </div>
+            <!-- ...thêm nhiều đánh giá khác... -->
+        </div>
+        <form id="review-form" class="review-form">
+            <h3>Gửi đánh giá của bạn</h3>
+            <input type="text" name="name" placeholder="Họ và tên" required>
+            <textarea name="review" placeholder="Nội dung đánh giá" required></textarea>
+            <button type="submit">Gửi đánh giá</button>
+            <div id="review-message"></div>
+        </form>
+    </div>
+</main>
+<footer id="footer">
+    <div class="container">
+        &copy; 2025 HIBIKI Shop. All rights reserved.
+    </div>
+</footer>
+<script src="scripts.js"></script>
+<script src="reviews.js"></script>
+</body>
+</html>

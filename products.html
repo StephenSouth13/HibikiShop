@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Sản phẩm | HIBIKI Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+<header id="header">
+    <!-- Copy header/menu từ index.html -->
+    <div class="container flex-between">
+        <a id="logo" href="index.html"><img src="images/logo.png" alt="HIBIKI Shop" /></a>
+        <nav>
+            <ul id="gnav-ul">
+                <li class="dropdown">
+                    <a href="products.html">Sản Phẩm</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="do-tap.html">Đồ tập</a></li>
+                        <li><a href="thuc-pham-chuc-nang.html">Thực phẩm chức năng</a></li>
+                        <li><a href="hat-dinh-duong.html">Hạt dinh dưỡng</a></li>
+                        <li><a href="thuc-pham-sach.html">Thực phẩm sạch</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="blog.html">Kiến Thức Dinh Dưỡng</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="blog.html">Chia sẻ kiến thức</a></li>
+                    </ul>
+                </li>
+                <li><a href="reviews.html">Đánh Giá Khách Hàng</a></li>
+                <li><a href="about.html">Giới Thiệu</a></li>
+                <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main id="content">
+    <div class="container">
+        <h1>Sản phẩm</h1>
+        <div class="product-filter">
+            <select id="category-filter">
+                <option value="">Tất cả danh mục</option>
+                <option value="do-tap">Đồ tập</option>
+                <option value="thuc-pham-chuc-nang">Thực phẩm chức năng</option>
+                <option value="hat-dinh-duong">Hạt dinh dưỡng</option>
+                <option value="thuc-pham-sach">Thực phẩm sạch</option>
+            </select>
+            <input type="text" id="search-product" placeholder="Tìm kiếm sản phẩm...">
+        </div>
+        <div class="product-list" id="product-list">
+            <div class="product-card" data-category="do-tap">
+                <img src="images/shoes1.png" alt="Giày chạy bộ">
+                <h3>Giày chạy bộ Nike</h3>
+                <p class="price">1.200.000đ</p>
+                <button class="add-cart-btn">Thêm vào giỏ</button>
+            </div>
+            <div class="product-card" data-category="thuc-pham-chuc-nang">
+                <img src="images/whey1.png" alt="Whey Protein">
+                <h3>Whey Protein Isolate</h3>
+                <p class="price">850.000đ</p>
+                <button class="add-cart-btn">Thêm vào giỏ</button>
+            </div>
+            <!-- ...thêm nhiều sản phẩm khác... -->
+        </div>
+        <div id="cart-panel">
+            <h2>Giỏ hàng</h2>
+            <ul id="cart-items"></ul>
+            <div id="cart-total"></div>
+            <button id="checkout-btn">Thanh toán</button>
+        </div>
+    </div>
+</main>
+<footer id="footer">
+    <div class="container">
+        &copy; 2025 HIBIKI Shop. All rights reserved.
+    </div>
+</footer>
+<script src="scripts.js"></script>
+<script src="cart.js"></script>
+<script src="product.js"></script>
+</body>
+</html>

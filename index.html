@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>HIBIKI Shop - Đồ tập & Dinh dưỡng</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header id="header">
+    <div class="container flex-between">
+        <a id="logo" href="#"><img src="images/logo.png" alt="HIBIKI Shop" /></a>
+        <nav>
+            <ul id="gnav-ul">
+                <li class="dropdown">
+                    <a href="products.html">Sản Phẩm</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="do-tap.html">Đồ tập</a></li>
+                        <li><a href="thuc-pham-chuc-nang.html">Thực phẩm chức năng</a></li>
+                        <li><a href="hat-dinh-duong.html">Hạt dinh dưỡng</a></li>
+                        <li><a href="thuc-pham-sach.html">Thực phẩm sạch</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="blog.html">Kiến Thức Dinh Dưỡng</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="blog.html">Chia sẻ kiến thức</a></li>
+                    </ul>
+                </li>
+                <li><a href="reviews.html">Đánh Giá Khách Hàng</a></li>
+                <li><a href="about.html">Giới Thiệu</a></li>
+                <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main id="content">
+    <div class="container flex-main">
+        <section id="main">
+            <h1>Chào mừng đến với HIBIKI Shop!</h1>
+            <section class="category-section">
+                <div class="category-card">
+                    <img src="images/running-shoes.png" alt="Đồ tập">
+                    <h3>Đồ tập</h3>
+                    <p>Chạy bộ, Gym, Tennis – Quần áo, giày, phụ kiện chính hãng.</p>
+                </div>
+                <div class="category-card">
+                    <img src="images/supplement.png" alt="Thực phẩm chức năng">
+                    <h3>Thực phẩm chức năng</h3>
+                    <p>Protein, vitamin, khoáng chất hỗ trợ sức khỏe & luyện tập.</p>
+                </div>
+                <div class="category-card">
+                    <img src="images/nuts.png" alt="Hạt dinh dưỡng">
+                    <h3>Hạt dinh dưỡng</h3>
+                    <p>Hạt óc chó, hạnh nhân, macca, mix hạt nhập khẩu chất lượng.</p>
+                </div>
+                <div class="category-card">
+                    <img src="images/clean-food.png" alt="Thực phẩm sạch">
+                    <h3>Thực phẩm sạch</h3>
+                    <p>Thịt, cá, rau củ hữu cơ – Đảm bảo an toàn và tươi ngon.</p>
+                </div>
+            </section>
+            <section class="post-content">
+                <h2>Kiến Thức Dinh Dưỡng</h2>
+                <p>Xem các bài chia sẻ về dinh dưỡng, tập luyện, kinh nghiệm sống khỏe mạnh.</p>
+                <a class="btn-green" href="blog.html">Khám phá ngay</a>
+            </section>
+        </section>
+        <aside id="side">
+            <h3>Ưu đãi nổi bật</h3>
+            <ul>
+                <li>Giảm 10% cho đơn hàng đầu tiên</li>
+                <li>Miễn phí vận chuyển toàn quốc</li>
+            </ul>
+            <h3>Đăng ký nhận ưu đãi</h3>
+            <form id="crm-form">
+                <input type="text" name="name" placeholder="Họ và tên" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <button type="submit">Đăng ký</button>
+                <div id="crm-message"></div>
+            </form>
+        </aside>
+    </div>
+</main>
+
+<footer id="footer">
+    <div class="container">
+        &copy; 2025 HIBIKI Shop. All rights reserved.
+    </div>
+</footer>
+<script src="scripts.js"></script>
+</body>
+</html>
