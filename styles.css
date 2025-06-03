@@ -231,16 +231,77 @@ button:hover {
     }
 }
 @media (max-width: 600px) {
+    /* Responsive cho header/menu trên điện thoại */
+    #header {
+        padding: 8px 0;
+    }
     .container {
-        width: 98%;
-        padding: 0 2px;
+        width: 100%;
+        padding: 0 6px;
+    }
+    #gnav-ul {
+        flex-direction: column;
+        gap: 0;
+        align-items: flex-start;
+        background: #fff;
+        position: static;
+        width: 100%;
+    }
+    #gnav-ul > li {
+        width: 100%;
+    }
+    #gnav-ul > li > a {
+        width: 100%;
+        padding: 14px 12px;
+        font-size: 1em;
+        border-radius: 0;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    .dropdown-menu {
+        position: static;
+        min-width: unset;
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        width: 100%;
+        animation: none;
+        flex-direction: column;
+    }
+    .dropdown-menu a {
+        padding: 12px 24px;
+        font-size: 0.98em;
+    }
+    .mega-menu {
+        flex-direction: column;
+        min-width: unset;
+        padding: 0;
+        gap: 0;
+    }
+    .dropdown-col {
+        min-width: unset;
+        padding: 0 8px;
+    }
+    .flex-main {
+        flex-direction: column;
+        gap: 0;
     }
     #main, #side {
         padding: 12px 4px;
+        margin-bottom: 18px;
+        box-shadow: none;
     }
     .category-section {
         flex-direction: column;
         gap: 12px;
+    }
+    .category-card {
+        max-width: 100%;
+        min-width: unset;
+    }
+    #footer {
+        padding: 12px 0;
+        font-size: 0.98em;
     }
 }
 #header a,
